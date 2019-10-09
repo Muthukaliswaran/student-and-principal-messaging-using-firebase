@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:icon="@drawable/menuicon">
+
+    <item
+        android:id="@+id/SendMessageToPrincipal"
+        android:orderInCategory="300"
+        android:title="Send message to Principal"></item>
+
+    <item
+        android:id="@+id/StudLogout"
+        android:orderInCategory="300"
+        android:title="Logout"></item>
+
+</menu>

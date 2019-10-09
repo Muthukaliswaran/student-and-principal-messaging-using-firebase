@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.Student">
+        <RelativeLayout
+            android:id="@+id/ToolbarStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/ToolbarStud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Student"
+                app:titleTextColor="@color/white"
+                android:background="@color/colorPrimary"
+                app:menu="@menu/menu_pricipal"/>
+        </RelativeLayout>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:tabGravity="fill"
+            app:tabTextColor="@color/gray"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabSelectedTextColor="@color/white"
+            app:tabIndicatorGravity="bottom"
+            app:tabIconTintMode="screen"
+            android:layout_below="@+id/ToolbarStudent">
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Received"
+                android:background="@color/colorPrimary"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sent"
+                android:background="@color/colorPrimary"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tablayout"
+            android:layout_marginTop="2dp"></androidx.viewpager.widget.ViewPager>
+
+        <FrameLayout
+            android:id="@+id/FragmentStudent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+    </RelativeLayout>
+
+</layout>

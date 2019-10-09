@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Gce_Bodi</string>
+    <string name="ServerKey">key=AAAAs5S5G9E:APA91bHvqsBY9UwWNGE3lCWZAf_xXyPiIuBb6VZkf2Gd7yRlPrdVd6l6PDguSg0ktJqa082iTqW81iNdW2_hmWzk152URUS_LmruA06wH6puUg_-A_K5aAPOvwewaFTSOGBv2CBwUM0M</string>
+    <string name="welcomeText">Welcome</string>
+    <string name="spinner_title">Batch</string>
+</resources>

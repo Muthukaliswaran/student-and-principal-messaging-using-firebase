@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:weightSum="6"
+       android:layout_marginTop="@dimen/_10sdp"
+       android:layout_marginStart="@dimen/_10sdp"
+       android:layout_marginEnd="@dimen/_10sdp">
+
+       <EditText
+           android:id="@+id/edt_1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:inputType="number"
+           android:gravity="center"
+           android:maxLength="1" />
+       <EditText
+           android:id="@+id/edt_2"
+           android:layout_width="0dp"
+           android:inputType="number"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:maxLength="1"/>
+       <EditText
+           android:id="@+id/edt_3"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:inputType="number"
+           android:gravity="center"
+           android:maxLength="1"/>
+       <EditText
+           android:id="@+id/edt_4"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:inputType="number"
+           android:gravity="center"
+           android:maxLength="1"/>
+       <EditText
+           android:id="@+id/edt_5"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:inputType="number"
+           android:gravity="center"
+           android:maxLength="1"/>
+       <EditText
+           android:id="@+id/edt_6"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:inputType="number"
+           android:gravity="center"
+           android:maxLength="1"/>
+
+   </LinearLayout>
+
+   <TextView
+       android:id="@+id/txt_seconds"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="resend in 60sec"
+       android:gravity="end"
+       android:layout_marginStart="@dimen/_20sdp"
+       android:layout_marginEnd="@dimen/_20sdp" />
+
+   <Button
+       android:id="@+id/btn_CheckOtp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="@dimen/_10sdp"
+       android:layout_marginEnd="@dimen/_10sdp"
+       android:layout_marginTop="@dimen/_10sdp"
+       android:backgroundTint="@color/colorPrimary"
+       android:text="Verify"
+       android:textStyle="bold"
+       android:textColor="@color/white"/>
+
+</LinearLayout>
+</layout>

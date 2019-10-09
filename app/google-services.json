@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "771294305233",
+    "firebase_url": "https://fir-pushnotify-f88f0.firebaseio.com",
+    "project_id": "fir-pushnotify-f88f0",
+    "storage_bucket": "fir-pushnotify-f88f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771294305233:android:07ba7a514e8f31a7ea9ef0",
+        "android_client_info": {
+          "package_name": "com.prasanthkalis.gce_bodi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771294305233-e6l39ea2isnaceqrse8p8kfmub08mttr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmQU_RyM5Wg-90qEqkr1jTuF6E3tMxSOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771294305233-e6l39ea2isnaceqrse8p8kfmub08mttr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MainActivity">
+
+        <Button
+            android:id="@+id/btn_Send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Notification"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:backgroundTint="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/txt_Welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcomeText"
+            android:textSize="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:fontFamily="@font/beyond_wonderland"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/txt_principalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Principal Login"
+            android:layout_below="@+id/txt_Welcome"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            />
+        <LinearLayout
+            android:id="@+id/layout_pricipalLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_principalName"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13sdp"
+                    android:gravity="start"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_Name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Password"
+                    android:gravity="start"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_Password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_PrincipalLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="Login"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_StudentLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you are a student click here to Register first!"
+            android:layout_below="@+id/layout_pricipalLogin"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <FrameLayout
+            android:id="@+id/frame_Register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+</layout>
+
